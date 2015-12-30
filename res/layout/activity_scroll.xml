@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sildingFinishLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff6677" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnEngine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="引擎控制" />
+
+            <Button
+                android:id="@+id/btnLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车门锁" />
+
+            <Button
+                android:id="@+id/btnTailLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尾箱锁" />
+
+            <Button
+                android:id="@+id/btnFrontRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前右车窗" />
+
+            <Button
+                android:id="@+id/btnFrontLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前左车窗" />
+
+            <Button
+                android:id="@+id/btnBackRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后右车窗" />
+
+            <Button
+                android:id="@+id/btnBackLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后左车窗" />
+
+            <Button
+                android:id="@+id/btnTwiceFlash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="双闪灯" />
+
+            <Button
+                android:id="@+id/btnWoo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鸣笛" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
