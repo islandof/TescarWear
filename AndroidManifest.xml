@@ -28,7 +28,11 @@
         </activity>
         <activity
             android:theme="@android:style/Theme.Translucent"
-            android:name=".NormalActivity">
+            android:name=".HearBeatActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name=".StepActivity">
         </activity>
         <activity
             android:theme="@android:style/Theme.Translucent"

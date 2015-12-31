@@ -52,7 +52,7 @@ public class AbsActivity extends SwipeBackActivity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 
-				startActivity(new Intent(AbsActivity.this, NormalActivity.class));
+				startActivity(new Intent(AbsActivity.this, HearBeatActivity.class));
 			}
 		});
 	}

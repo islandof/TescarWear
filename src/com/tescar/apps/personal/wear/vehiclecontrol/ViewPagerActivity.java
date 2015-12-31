@@ -3,7 +3,9 @@ package com.tescar.apps.personal.wear.vehiclecontrol;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -53,6 +55,8 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 
 		// for (int i = 0; i < 5; i++) {
 		// }
+		
+
 		View v = LayoutInflater.from(this).inflate(R.layout.activity_normal, null);
 		View v2 = LayoutInflater.from(this).inflate(R.layout.activity_normal2, null);
 		list.add(v);
@@ -114,10 +118,6 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 			}
 		});
 
-	
-		
-		
-
 		System.out.println(list.size());
 
 		viewPager.setAdapter(new Adapter(this, list));
@@ -128,6 +128,13 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 		}
 
 	}
+	
+	public static void showDiaog(Context context, String title, String msg) {
+		new AlertDialog.Builder(context).setTitle(title)// 设置标题
+				.setMessage(msg)// 设置消息
+				.setPositiveButton("确定", null).show();
+	}
+
 
 	public class Adapter extends PagerAdapter {
 		private List<View> list;

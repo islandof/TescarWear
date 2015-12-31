@@ -14,8 +14,11 @@ public class MainActivity extends SwipeBackActivity implements OnClickListener {
 		setContentView(R.layout.activity_main);
 		
 
-		Button mButtonNormal = (Button) findViewById(R.id.normal_activity);
-		mButtonNormal.setOnClickListener(this);
+		Button mButtonHeart = (Button) findViewById(R.id.heart_activity);
+		mButtonHeart.setOnClickListener(this);
+
+		Button mButtonStep = (Button) findViewById(R.id.step_activity);
+		mButtonStep.setOnClickListener(this);
 
 		Button mButtonAbs = (Button) findViewById(R.id.absListview_activity);
 		mButtonAbs.setOnClickListener(this);
@@ -33,8 +36,11 @@ public class MainActivity extends SwipeBackActivity implements OnClickListener {
 	public void onClick(View v) {
 		Intent mIntent = null;
 		switch (v.getId()) {
-		case R.id.normal_activity:
-			mIntent = new Intent(MainActivity.this, NormalActivity.class);
+		case R.id.heart_activity:
+			mIntent = new Intent(MainActivity.this, HearBeatActivity.class);
+			break;
+		case R.id.step_activity:
+			mIntent = new Intent(MainActivity.this, StepActivity.class);
 			break;
 		case R.id.absListview_activity:
 			mIntent = new Intent(MainActivity.this, AbsActivity.class);

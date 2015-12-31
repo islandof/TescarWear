@@ -3,7 +3,9 @@ package com.tescar.apps.personal.wear.vehiclecontrol;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
@@ -27,7 +29,7 @@ import com.ingenic.iwds.utils.IwdsLog;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-public class NormalActivity extends SwipeBackActivity implements ServiceClient.ConnectionCallbacks {
+public class HearBeatActivity extends SwipeBackActivity implements ServiceClient.ConnectionCallbacks {
     private final static String TAG = "IWDS ---> SensorTestActivity";
 
 	private ServiceClient mClient;
@@ -57,6 +59,15 @@ public class NormalActivity extends SwipeBackActivity implements ServiceClient.C
 		ImageView imageView = (ImageView) findViewById(R.id.purseimage);
 		imageView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.pulse));
 		mHeartRateText = (TextView) findViewById(R.id.text_heart);
+		
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setMessage("Are you sure?")
+		.setCancelable(false)
+		.setPositiveButton("Sure",new DialogInterface.OnClickListener() {
+		public void onClick(DialogInterface dialog,int id) {
+		}
+		}).setNegativeButton("Cancel", null);
+		AlertDialog alert = builder.create();
 	
 	}
 	
@@ -133,10 +144,10 @@ public class NormalActivity extends SwipeBackActivity implements ServiceClient.C
                     + accuracy);
             if (sensor.getType() == Sensor.TYPE_HEART_RATE) {
                 if (accuracy == SensorServiceManager.ACCURACY_HEART_RATE_UNAVALIABLE) {
-                    Toast.makeText(NormalActivity.this,
+                    Toast.makeText(HearBeatActivity.this,
                             "Make sure the watch wear well", Toast.LENGTH_SHORT).show();;
                 } else if (accuracy == SensorServiceManager.ACCURACY_HEART_RATE_AVALIABLE) {
-                    Toast.makeText(NormalActivity.this,
+                    Toast.makeText(HearBeatActivity.this,
                             "Watch wear well", Toast.LENGTH_SHORT).show();;
                 }
             }
