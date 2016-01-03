@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white" >
+    android:background="@drawable/bg_all_black" >
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -20,13 +20,15 @@
                 android:id="@+id/heart_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="心率" />
+                android:text="心率"
+                android:textColor="#ffffff" />
 
             <Button
                 android:id="@+id/step_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="步数" />
+                android:text="步数"
+                android:textColor="#ffffff" />
 
             <Button
                 android:id="@+id/absListview_activity"
@@ -39,14 +41,58 @@
                 android:id="@+id/scrollview_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="滚动式" 
-                android:visibility="gone"/>
+                android:text="滚动式"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/viewpager_activity"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="车辆控制" />
+                android:text="车辆控制"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/trace_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="轨迹查询"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/chaosu_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="超速提醒"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/carstatus_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="车况报警"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/clock_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="闹钟与提醒"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/date_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="时间与日期"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/blueteeth_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="蓝牙设置"
+                android:textColor="#ffffff" />
         </LinearLayout>
     </ScrollView>
 

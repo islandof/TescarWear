@@ -55,7 +55,15 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 
 		// for (int i = 0; i < 5; i++) {
 		// }
-		
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setMessage("是否确定?")
+		.setCancelable(false)
+		.setPositiveButton("确定",new DialogInterface.OnClickListener() {
+		public void onClick(DialogInterface dialog,int id) {
+		}
+		}).setNegativeButton("否", null);
+		final AlertDialog alert = builder.create();
+	
 
 		View v = LayoutInflater.from(this).inflate(R.layout.activity_normal, null);
 		View v2 = LayoutInflater.from(this).inflate(R.layout.activity_normal2, null);
@@ -65,6 +73,7 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 		btn_back_lock.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				alert.show();
 				 m_transactor.send("尾箱锁");
 			}
 		});
@@ -72,6 +81,7 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 		btn_door_lock.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				alert.show();
 				 m_transactor.send("车门锁");
 			}
 		});
@@ -79,6 +89,7 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 		btn_flash_light.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				alert.show();
 				 m_transactor.send("闪光灯");
 			}
 		});
@@ -86,6 +97,7 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 		btn_woo_sound.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				alert.show();
 				 m_transactor.send("鸣笛");
 			}
 		});
@@ -93,6 +105,7 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 		btn_air_condition.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				alert.show();
 				 m_transactor.send("打开空调");
 			}
 		});
@@ -100,6 +113,7 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 		btn_unlock_run.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				alert.show();
 				 m_transactor.send("解锁");
 			}
 		});
@@ -107,6 +121,7 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 		btn_shutdown_engine.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				alert.show();
 				 m_transactor.send("关闭引擎");
 			}
 		});
@@ -114,6 +129,7 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 		btn_car_scan.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				alert.show();
 				 m_transactor.send("汽车检测");
 			}
 		});

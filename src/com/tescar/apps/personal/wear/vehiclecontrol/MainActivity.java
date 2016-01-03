@@ -29,6 +29,9 @@ public class MainActivity extends SwipeBackActivity implements OnClickListener {
 		Button mButtonViewPager = (Button) findViewById(R.id.viewpager_activity);
 		mButtonViewPager.setOnClickListener(this);
 
+		Button mButtonTrace = (Button) findViewById(R.id.trace_activity);
+		mButtonTrace.setOnClickListener(this);
+
 	}
 	
 
@@ -50,6 +53,9 @@ public class MainActivity extends SwipeBackActivity implements OnClickListener {
 			break;
 		case R.id.viewpager_activity:
 			mIntent = new Intent(MainActivity.this, ViewPagerActivity.class);
+			break;
+		case R.id.trace_activity:
+			mIntent = new Intent(MainActivity.this, TraceActivity.class);
 			break;
 		}
 
