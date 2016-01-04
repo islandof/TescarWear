@@ -22,29 +22,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-                <activity
-            android:theme="@android:style/Theme.Translucent"
-            android:name=".AbsActivity" >
+        <activity
+            android:name=".AbsActivity"
+            android:theme="@android:style/Theme.Translucent" >
         </activity>
         <activity
-            android:theme="@android:style/Theme.Translucent"
-            android:name=".HearBeatActivity">
+            android:name=".HearBeatActivity"
+            android:theme="@android:style/Theme.Translucent" >
         </activity>
         <activity
-            android:theme="@android:style/Theme.Translucent"
-            android:name=".StepActivity">
+            android:name=".StepActivity"
+            android:theme="@android:style/Theme.Translucent" >
         </activity>
         <activity
-            android:theme="@android:style/Theme.Translucent"
-            android:name=".ScrollActivity" >
+            android:name=".ScrollActivity"
+            android:theme="@android:style/Theme.Translucent" >
         </activity>
         <activity
-            android:theme="@android:style/Theme.Translucent"
-            android:name=".TraceActivity" >
+            android:name=".TraceActivity"
+            android:theme="@android:style/Theme.Translucent" >
         </activity>
-        <activity 
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:name=".ViewPagerActivity"></activity>
+        <activity
+            android:name=".ChaosuActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name=".ClockActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name=".DateActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name=".ViewPagerActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
     </application>
 
 </manifest>

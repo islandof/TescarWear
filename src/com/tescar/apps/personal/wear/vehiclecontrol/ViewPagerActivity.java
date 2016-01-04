@@ -56,7 +56,7 @@ public class ViewPagerActivity extends SwipeBackActivity implements DataTransact
 		// for (int i = 0; i < 5; i++) {
 		// }
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setMessage("是否确定?")
+		builder.setMessage("是否发送数据?")
 		.setCancelable(false)
 		.setPositiveButton("确定",new DialogInterface.OnClickListener() {
 		public void onClick(DialogInterface dialog,int id) {

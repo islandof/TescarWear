@@ -32,6 +32,18 @@ public class MainActivity extends SwipeBackActivity implements OnClickListener {
 		Button mButtonTrace = (Button) findViewById(R.id.trace_activity);
 		mButtonTrace.setOnClickListener(this);
 
+		Button mButtonChaosu = (Button) findViewById(R.id.chaosu_activity);
+		mButtonChaosu.setOnClickListener(this);
+
+		Button mButtonCarstatus = (Button) findViewById(R.id.carstatus_activity);
+		mButtonCarstatus.setOnClickListener(this);
+
+		Button mButtonClock = (Button) findViewById(R.id.clock_activity);
+		mButtonClock.setOnClickListener(this);
+		
+		Button mButtonDate = (Button) findViewById(R.id.date_activity);
+		mButtonDate.setOnClickListener(this);
+
 	}
 	
 
@@ -56,6 +68,18 @@ public class MainActivity extends SwipeBackActivity implements OnClickListener {
 			break;
 		case R.id.trace_activity:
 			mIntent = new Intent(MainActivity.this, TraceActivity.class);
+			break;
+		case R.id.chaosu_activity:
+			mIntent = new Intent(MainActivity.this, ChaosuActivity.class);
+			break;
+		case R.id.carstatus_activity:
+			mIntent = new Intent(MainActivity.this, ChaosuActivity.class);
+			break;
+		case R.id.clock_activity:
+			mIntent = new Intent(MainActivity.this, ClockActivity.class);
+			break;
+		case R.id.date_activity:
+			mIntent = new Intent(MainActivity.this, DateActivity.class);
 			break;
 		}
 

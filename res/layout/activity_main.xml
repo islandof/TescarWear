@@ -53,6 +53,7 @@
                 android:textColor="#ffffff" />
 
             <Button
+                android:visibility="gone"
                 android:id="@+id/trace_activity"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -88,6 +89,7 @@
                 android:textColor="#ffffff" />
 
             <Button
+                android:visibility="gone"
                 android:id="@+id/blueteeth_activity"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
